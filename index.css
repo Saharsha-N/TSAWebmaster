@@ -1,1 +1,42 @@
-/* This is the index.css file*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+* {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+.thecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 98, 1) 0%,
+    rgba(85, 0, 255, 1) 100%
+  );
+  min-height: 100vh;
+}
+p {
+  color: #f7f7f7;
+  font-size: 22px;
+  position: relative;
+  padding-bottom: 5px;
+}
+p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+}
+p:hover::after {
+  content: "";
+  width: 100%;
+  transition: width 1s ease-in-out;
+}
+
+.text {
+  width: 50%;
+}
