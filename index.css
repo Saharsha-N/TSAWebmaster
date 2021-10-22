@@ -5,6 +5,7 @@
 }
 .thecontainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: rgb(2, 0, 36);
@@ -16,25 +17,12 @@
   );
   min-height: 100vh;
 }
-p {
+#info {
   color: #f7f7f7;
   font-size: 22px;
   position: relative;
   padding-bottom: 5px;
-}
-p::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: white;
-}
-p:hover::after {
-  content: "";
-  width: 100%;
-  transition: width 1s ease-in-out;
+  margin-bottom: 50px;
 }
 
 h1 {
@@ -43,6 +31,7 @@ h1 {
   font-weight: bold;
   position: relative;
   padding-bottom: 5px;
+  display: inline-block;
 }
 
 h1::after {
@@ -53,11 +42,11 @@ h1::after {
   width: 0;
   height: 2px;
   background-color: white;
-} 
+}
 
 h1:hover::after {
   content: "";
-  width: 45%; 
+  width: 100%;
   transition: width 1s ease-in-out;
 }
 
