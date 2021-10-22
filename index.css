@@ -22,20 +22,6 @@ p {
   position: relative;
   padding-bottom: 5px;
 }
-p::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: white;
-}
-p:hover::after {
-  content: "";
-  width: 100%;
-  transition: width 1s ease-in-out;
-}
 
 h1 {
   color: #f7f7f7;
@@ -43,6 +29,7 @@ h1 {
   font-weight: bold;
   position: relative;
   padding-bottom: 5px;
+  display: inline-block;
 }
 
 h1::after {
@@ -53,11 +40,11 @@ h1::after {
   width: 0;
   height: 2px;
   background-color: white;
-} 
+}
 
 h1:hover::after {
   content: "";
-  width: 45%; 
+  width: 100%;
   transition: width 1s ease-in-out;
 }
 
