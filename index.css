@@ -49,6 +49,9 @@ h1:hover::after {
   width: 100%;
   transition: width 1s ease-in-out;
 }
+h1:hover {
+  color: darkgrey !important;
+}
 
 .text {
   width: 50%;
