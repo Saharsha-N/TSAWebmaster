@@ -53,7 +53,6 @@ h1:hover::after {
 h1:hover {
   color: rgb(59, 54, 54) !important;
 }
-
 .text {
   width: 50%;
 }
