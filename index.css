@@ -15,6 +15,7 @@
     rgba(121, 9, 98, 1) 0%,
     rgba(85, 0, 255, 1) 100%
   );
+  background-attachment: fixed;
   min-height: 100vh;
 }
 #info {
@@ -23,31 +24,6 @@
   position: relative;
   padding-bottom: 5px;
   margin-bottom: 50px;
-}
-
-h1 {
-  color: #f7f7f7;
-  font-size: 48px;
-  font-weight: bold;
-  position: relative;
-  padding-bottom: 5px;
-  display: inline-block;
-}
-
-h1::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: white;
-}
-
-h1:hover::after {
-  content: "";
-  width: 100%;
-  transition: width 1s ease-in-out;
 }
 
 .text {
@@ -77,4 +53,38 @@ h1:hover::after {
   width: 100%;
   transition: all 0.5s ease-in-out;
   transform-origin: center;
+}
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  width: 125%;
+
+  color: rgb(0, 0, 0);
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(255, 255, 255); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(22, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 125%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #f7f7f7;
+  }
 }
