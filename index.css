@@ -59,12 +59,14 @@
   width: 100%;
 
   color: rgb(255, 255, 255);
+  font-size: 50px;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid rgb(255, 255, 255); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
+  padding-bottom: 8px;
+  letter-spacing: 0.10em; /* Adjust as needed */
   animation: typing 3.5s steps(22, end), blink-caret 0.75s step-end infinite;
 }
 
