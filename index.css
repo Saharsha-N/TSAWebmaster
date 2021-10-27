@@ -51,7 +51,7 @@ h1:hover::after {
   transition: width 1s ease-in-out;
 }
 h1:hover {
-  color: rgb(59, 54, 54) !important;
+  color: rgb(197, 194, 194) !important;
 }
 .text {
   width: 50%;
