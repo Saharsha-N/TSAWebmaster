@@ -19,24 +19,20 @@
   min-height: 100vh;
 }
 #info {
-  color: #f7f7f7;
-  font-size: 22px;
-  position: relative;
-  padding-bottom: 5px;
+  @@ -25,31 +26,6 @@
   margin-bottom: 50px;
 }
 
-.text {
-  width: 50%;
-}
-.nav-link {
+h1 {
   color: #f7f7f7;
+  font-size: 48px;
+  font-weight: bold;
   position: relative;
   padding-bottom: 5px;
   display: inline-block;
 }
 
-.nav-link::after {
+h1::after {
   content: "";
   position: absolute;
   left: 0;
@@ -44,30 +40,37 @@
   width: 0;
   height: 2px;
   background-color: white;
-  left: 50%; /*Add this*/
-  transform: translate(-50%, 0); /*Add this*/
 }
 
-.nav-link:hover::after {
+h1:hover::after {
   content: "";
   width: 100%;
+  transition: width 1s ease-in-out;
+}
+
+.text {
+  width: 50%;
+}
+@@ -78,3 +54,37 @@ h1:hover::after {
   transition: all 0.5s ease-in-out;
   transform-origin: center;
 }
 /* DEMO-SPECIFIC STYLES */
-.typewriter h1 {
+.typewriter {
+  width: 120%;
+}
+.typewriter p {
+  font-size: 40px;
   width: 100%;
-
-  color: rgb(255, 255, 255);
-  font-size: 50px;
+  display: inline-block;
+  color: rgb(0, 0, 0);
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid rgb(255, 255, 255); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  padding-bottom: 8px;
-  letter-spacing: 0.10em; /* Adjust as needed */
-  animation: typing 3.5s steps(22, end), blink-caret 0.75s step-end infinite;
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(22, end), blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
