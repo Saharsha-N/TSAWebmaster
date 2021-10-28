@@ -17,6 +17,7 @@
   );
   background-attachment: fixed;
   min-height: 100vh;
+  position: relative;
 }
 #info {
   @@ -25,31 +26,6 @@
@@ -92,4 +93,17 @@ h1:hover::after {
   50% {
     border-color: #f7f7f7;
   }
+}
+.footer-container {
+  background-color: #4d4d4d;
+  color: white;
+  min-width: 100vw;
+  height: 15vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
