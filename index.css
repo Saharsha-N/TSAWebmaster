@@ -8,12 +8,7 @@ html {
   overflow-x: hidden;
 }
 
-.thecontainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: rgb(2, 0, 36);
+body {
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
@@ -21,8 +16,25 @@ html {
     rgba(85, 0, 255, 1) 100%
   );
   background-attachment: fixed;
+  background-size: cover;
+}
+
+.thecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  /*background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 98, 1) 0%,
+    rgba(85, 0, 255, 1) 100%
+  );*/
+  background-attachment: fixed;
   min-height: 100vh;
   position: relative;
+  z-index: -1;
 }
 
 /*
@@ -121,12 +133,14 @@ h1:hover::after {
   text-align: center;
 }*/
 
+/* Footer */
+
 .footer {
   background: #303036;
   color: #d3d3d3;
   width: 100%;
   position: absolute;
-  bottom: 0%;
+  bottom: -40%;
   left: 0;
   justify-content: center;
   align-items: center;
@@ -217,9 +231,9 @@ h1:hover::after {
   position: absolute;
   background-color: #4d4d4d;
   color: white;
-  min-width: 100vw;
+  min-width: 99.2vw;
   height: 10vh;
-  bottom: -10%;
+  bottom: -50%;
   left: 0;
   vertical-align: middle;
   align-items: center;
@@ -254,15 +268,10 @@ h1:hover::after {
 }
 
 .btn-big:hover {
-  background: linear-gradient(
-    90deg,
-    rgb(36, 36, 36) 0%,
-    rgb(126, 15, 15) 0%,
-    rgb(103, 21, 170) 100%
-  );
+  background: rgb(177, 25, 25);
   color: white;
   border-radius: 6px;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease;
 }
 
 .text-input {
