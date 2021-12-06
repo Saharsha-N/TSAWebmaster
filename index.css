@@ -11,9 +11,9 @@ html {
 body {
   background: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(121, 9, 98, 1) 0%,
-    rgba(85, 0, 255, 1) 100%
+    rgb(218, 124, 182) 0%,
+    rgb(184, 20, 20) 0%,
+    rgb(95, 45, 45) 100%
   );
   background-attachment: fixed;
   background-size: cover;
@@ -48,12 +48,17 @@ h1::after {
   width: 0;
   height: 2px;
   background-color: white;
+  color: white;
 }
 
 h1:hover::after {
   content: "";
   width: 100%;
   transition: width 1s ease-in-out;
+}
+
+#info {
+  color: white;  
 }
 
 .text {
@@ -66,7 +71,7 @@ h1:hover::after {
   font-size: 40px;
   width: 100%;
   display: inline-block;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid rgb(255, 255, 255); /* The typwriter cursor */
