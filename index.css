@@ -96,6 +96,7 @@ h1:hover::after {
     border-color: #f7f7f7;
   }
 }
+
 .footer-bottom {
   display: flex;
 
@@ -106,9 +107,11 @@ h1:hover::after {
   height: 8%;
   bottom: -40%;
   left: 0;
+  vertical-align: middle;
   justify-content: center;
   align-items: center;
 }
+
 .nav-link {
   color: #f7f7f7;
   position: relative;
