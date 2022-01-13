@@ -1,45 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
-.navbar {
-  background-image: url("assets/500_F_369259092_I80CyfbNryKWOwDmA94IEdWLRIXXBxnK.jpg");
+
+nav {
+  background: linear-gradient(
+    120deg,
+    #b50000,
+    #ab0002,
+    #a20004,
+    #980005,
+    #8f0006,
+    #860006,
+    #7c0006,
+    #730006,
+    #6a0005,
+    #610004,
+    #580002,
+    #4f0000
+  );
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  filter: drop-shadow(10px 15px 4px rgba(255, 255, 255, 0.78));
-  border-radius: 15px;
+  position: absolute;
   background-attachment: fixed;
-  background-position: center;
-}
-.logo {
-  margin-left: 2rem;
 }
 img {
   aspect-ratio: 1;
-  width: 100px;
+  width: 50%;
 }
-ul {
-  list-style-type: none;
-  display: flex;
-}
-li {
-  margin-right: 2rem;
+
+.nav-link {
+  position: relative;
   text-decoration: none;
-  margin-left: 1.75rem;
-}
-a {
-  text-decoration: none;
-  color: black;
   font-family: Titan One;
   font-style: normal;
   font-weight: bold;
   font-size: 2rem;
   line-height: 43px;
   -webkit-text-stroke: 0.75px black;
-  color: #e2c4ed;
+  color: rgba(228, 21, 21, 0.904) !important;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 2.1rem;
+  cursor: pointer;
 }
-body {
-  background-color: black;
+
+.nav-link:hover {
+  opacity: 100%;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: white;
+  left: 50%; /*Add this*/
+  transform: translate(-50%, 0); /*Add this*/
+}
+.nav-link:hover::after {
+  content: "";
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-link:hover::after {
+    display: none;
+  }
 }
