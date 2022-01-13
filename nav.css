@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
 .navbar {
-  background-image: url("assets/Heading.svg");
+  background-image: url("assets/500_F_369259092_I80CyfbNryKWOwDmA94IEdWLRIXXBxnK.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  width: %;
-
+  width: 100%;
+  min-height: 100%;
   display: flex;
   align-items: center;
   filter: drop-shadow(10px 15px 4px rgba(255, 255, 255, 0.78));
-  justify-content: center;
+  border-radius: 15px;
+  background-attachment: fixed;
+  background-position: center;
 }
 .logo {
   margin-left: 2rem;
