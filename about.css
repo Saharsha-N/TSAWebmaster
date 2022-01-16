@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+
+body, html {
+    background-image: linear-gradient(to bottom, red, black);
+    background-color: red;
+    background-attachment: fixed;
+    max-height: 100%;
+}
+
+h1.creators {
+    font-size: 82px;
+    text-align: center;
+    color: white;
+    font-family: Titan One;
+    font-weight: 100;
+}
+
+p.creatorText {
+    color: white;
+    text-align: center;
+    font-family: Cambria;
+}
+
+div.aboutCreators li {
+    color: white;
+    font-family: Cambria;
+    text-align: center;
+    word-spacing: 1.5px;
+}
+
+.documentation a {
+    text-decoration: none;
+    color: white;
+    font-family: Cambria;
+    font-weight: bold;
+}
