@@ -1,0 +1,81 @@
+body, html {
+    background-color: black;
+    overflow-x: hidden;
+    background-image: url('assets\Home page (2).svg');
+}
+
+.backgroundImage {
+    background-size: cover;
+    height: 100%;
+    overflow: visible;
+}
+
+.img1 {
+    position: absolute;
+    width: 130%;
+    max-height: auto !important;
+    z-index: 0;
+}
+
+.img2 {
+    left: 73%;
+    top: 102.5%;
+    position: absolute;
+    width: 20%;
+    max-height: auto;
+    z-index: 2;
+}
+
+.img3 {
+    left: 54%;
+    top: 102.5%;
+    position: absolute;
+    width: 20%;
+    max-height: auto;
+    z-index: 2;
+}
+
+.img4 {
+    left: 9%;
+    top: 175%;
+    position: absolute;
+    width: 35%;
+    max-height: auto;
+    z-index: 2;
+}
+
+.img5 {
+    left: 54%;
+    top: 250%;
+    position: absolute;
+    width: 35%;
+    max-height: auto;
+    z-index: 2;
+}
+
+.img6 {
+    left: 54%;
+    top: 270%;
+    position: absolute;
+    width: 35%;
+    height: 45%;
+    z-index: 1;
+}
+
+.img7 {
+    left: 9%;
+    top: 340%;
+    position: absolute;
+    width: 35%;
+    max-height: auto;
+    z-index: 1;
+}
+
+.img8 {
+    left: 9%;
+    top: 370%;
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    z-index: 1;
+}
