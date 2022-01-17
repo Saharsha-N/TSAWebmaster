@@ -1,5 +1,173 @@
 body, html {
     background-color: black;
     overflow-x: hidden;
-    background-image: url('assets\Home page (2).svg');
+    background-image: url('assets\Screenshot 2022-01-16 205446.png');
+}
+
+/* Add a black background color to the top navigation */
+.navbar {
+    background: linear-gradient(
+        120deg,
+        #b50000,
+        #ab0002,
+        #a20004,
+        #980005,
+        #8f0006,
+        #860006,
+        #7c0006,
+        #730006,
+        #6a0005,
+        #610004,
+        #580002,
+        #4f0000
+      );
+    overflow: hidden;
+    height: 10rem;
+}
+
+.backgroundImage {
+    display: flex;
+    overflow: visible;
+}
+
+.navbar img {
+    float: left;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 55px;
+    text-decoration: none;
+    font-size: 48px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: rgb(107, 5, 5);
+    color: rgb(245, 96, 96);
+    transition: 0.4s;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.backgroundImage {
+    background-size: cover;
+    height: 100%;
+    overflow: visible;
+}
+
+.img1 {
+    position: absolute !important;
+    width: 128% !important;
+    max-height: auto !important;
+    z-index: -1;
+    top: -17.5%;
+    object-fit: cover;
+}
+
+.img2 {
+    left: 73%;
+    top: 105.5%;
+    position: absolute !important;
+    width: 20%;
+    max-height: auto;
+    z-index: 2;
+}
+
+.img3 {
+    left: 54%;
+    top: 112rem;
+    position: absolute;
+    width: 20%;
+    max-height: auto;
+    z-index: 2;
+}
+
+.img4 {
+    left: 9%;
+    top: 175%;
+    position: absolute;
+    width: 35%;
+    max-height: auto;
+    z-index: 2;
+}
+
+.img5 {
+    left: 54%;
+    top: 250%;
+    position: absolute;
+    width: 35%;
+    max-height: auto;
+    z-index: 2;
+}
+
+.img6 {
+    left: 54%;
+    top: 270%;
+    position: absolute;
+    width: 35%;
+    height: 45%;
+    z-index: 1;
+}
+
+.img7 {
+    left: 9%;
+    top: 340%;
+    position: absolute;
+    width: 35%;
+    max-height: auto;
+    z-index: 1;
+}
+
+.img8 {
+    left: 9%;
+    top: 370%;
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    z-index: 1;
+}
+
+@media screen and (min-width: 1200px) {    
+    .img2 {
+        top: 65.5%;
+    }
+    
+    .img3 {
+        top: 65.5%;
+    }
+    
+    .img4 {
+        top: 132.5%;
+    }
+    
+    .img5 {
+        top: 190.5%;
+    }
+    
+    .img6 {
+        top: 205.5%;
+        height: 35%;
+        width: 35%;
+    }
+    
+    .img7 {
+        top: 255%;
+    }
+    
+    .img8 {
+        top: 280%;
+        width: 35%;
+        height: 25%;
+
+    }
 }
