@@ -22,7 +22,7 @@ body, html {
         #4f0000
       );
     overflow: hidden;
-    height: 10rem;
+    height: 6rem;
 }
 
 .backgroundImage {
@@ -31,6 +31,7 @@ body, html {
 }
 
 .navbar img {
+    height: inherit;
     float: left;
     margin-right: 1.5%;
     margin-left: 1.5%;
@@ -41,9 +42,9 @@ body, html {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 55px;
+    padding: 30px;
     text-decoration: none;
-    font-size: 48px;
+    font-size: 36px;
 }
 
 /* Change the color of links on hover */
@@ -70,7 +71,7 @@ body, html {
     width: 128% !important;
     max-height: auto !important;
     z-index: -1;
-    top: -17.5%;
+    top: -21.5%;
     object-fit: cover;
 }
 
